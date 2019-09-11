@@ -40,7 +40,7 @@ char stringReverser(string stuff) {
 
 int main()
 {
-	//string userInput;
+	string userInput;
 	//cout << "enter a string" << endl;
 	//cin >> userInput;
 
@@ -64,17 +64,39 @@ int main()
 
 
 
-	string yourString = "right on";
+	string yourString = "this is my big long string and i want you to extract stuff from it";
 
-	cout << yourString[yourString.length() - 1] << endl;
+	//cout << yourString[yourString.length() - 1] << endl;
 
 
-	//index = userInput.length
-	//while (index >= 0) {
+	
+		int index = yourString.length();
+		while (index >= 0) {
 
+			cout << yourString[index];
+			//cout << index << endl;
+			index--;
+
+	}
+
+			
+			//for (int i = yourString.length();; i <= 6; i++) {
+				
+			//	cout << yourString[yourString.length() - 1];
+
+
+			//}
+			
+
+
+
+	//index = userInput.length();
+//while (index >= 0) {
 
 	//	cout << myReversedString << endl;
 
-	//	index--;
+	//index--;
 	//}
+
+
 }
