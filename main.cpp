@@ -37,20 +37,37 @@ char stringReverser(string stuff) {
 }
 
 
+bool palindromeDetector(string stuff) {
+
+
+	int index = stuff.length();
+	while (index >= 0) {
+
+		cout << stuff[index];
+
+
+		index--;
+	}
+
+	if (stuff[index] == stuff) {
+		return true;
+	}
+}
+
 
 int main()
 {
 	string userInput;
-	//cout << "enter a string" << endl;
-	//cin >> userInput;
+	cout << "enter a string" << endl;
+	cin >> userInput;
 
-	//char myStringFirst = findFirstLetter(userInput);
+	char myStringFirst = findFirstLetter(userInput);
 
-	//bool myFirstLetter = letterChecker(findFirstLetter(userInput), findLastLetter(userInput));
+	bool myFirstLetter = letterChecker(findFirstLetter(userInput), findLastLetter(userInput));
 
-	//cout << myFirstLetter << endl;
+	cout << myFirstLetter << endl;
 
-	//char myReversedString = stringReverser(userInput);
+	char myReversedString = stringReverser(userInput);
 
 	//cout << myReversedString << endl;
 
@@ -64,7 +81,7 @@ int main()
 
 
 
-	string yourString = "this is my big long string and i want you to extract stuff from it";
+	string yourString = "daad";
 
 	//cout << yourString[yourString.length() - 1] << endl;
 
@@ -76,27 +93,26 @@ int main()
 			cout << yourString[index];
 			//cout << index << endl;
 			index--;
-
 	}
 
-			
-			//for (int i = yourString.length();; i <= 6; i++) {
-				
-			//	cout << yourString[yourString.length() - 1];
 
+		bool isItPalindrome = palindromeDetector(userInput);
 
-			//}
-			
+		cout << isItPalindrome << endl;
 
 
 
-	//index = userInput.length();
-//while (index >= 0) {
 
-	//	cout << myReversedString << endl;
 
-	//index--;
-	//}
+
+
+
+
+
+
+		
+
+
 
 
 }
