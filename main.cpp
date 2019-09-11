@@ -9,18 +9,18 @@ using namespace std;
 
 char findFirstLetter(string stuff) {
 	return stuff.front();
-	}
-	
+}
+
 char findLastLetter(string stuff) {
 	return stuff.back();
-	}
+}
 
 bool letterChecker(char first, char last) {
 
 	if (first == 'a' || first == 'b' || first == 'c' || first == 'd' || first == 'e')
 		return true;
 
-	if (last == 'a' || last == 'b' || last == 'c' || last == 'd' || last == 'e') 
+	if (last == 'a' || last == 'b' || last == 'c' || last == 'd' || last == 'e')
 		return true;
 
 	else {
@@ -31,21 +31,18 @@ bool letterChecker(char first, char last) {
 }
 
 
-string stringReverser(string stuff) {
+char stringReverser(string stuff) {
 
-	
-	cout << stuff.back() << endl;
-
-	
+	return stuff.back();
 }
 
 
 
 int main()
 {
-	string userInput;
-	cout << "enter a string" << endl;
-	cin >> userInput;
+	//string userInput;
+	//cout << "enter a string" << endl;
+	//cin >> userInput;
 
 	//char myStringFirst = findFirstLetter(userInput);
 
@@ -53,16 +50,28 @@ int main()
 
 	//cout << myFirstLetter << endl;
 
-	string myReversedString = stringReverser(userInput);
+	//char myReversedString = stringReverser(userInput);
 
-	cout << myReversedString << endl; 
+	//cout << myReversedString << endl;
+
+	//int index = userInput.length();
+	//while (index >= 1) {
+
+	//	cout << myReversedString ;
+
+	//	index--;
+	//}
 
 
+
+	string yourString = "right on";
+
+	cout << yourString[yourString.length() - 1] << endl;
 
 
 	//index = userInput.length
 	//while (index >= 0) {
-			  
+
 
 	//	cout << myReversedString << endl;
 
